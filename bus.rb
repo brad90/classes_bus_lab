@@ -28,5 +28,15 @@ class Bus
     @passengers.clear()
   end
 
+  def adding_queue(bus_stop)
+
+    for passenger in bus_stop.queue
+      add_a_passenger(passenger)
+    end
+
+    bus_stop.queue = []
+
+  end
+
 
 end
